@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	text-align: center;
+}
+
+button {
+	border: 0;
+	height: fit-content;
+}
+
+input[type="checkbox"] {
+	width: 30px;
+	height: 30px;
+}
+
+footer {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #333488;
+	height: 100vh;
+	width: 100vw;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* background-color: #1f1f4f; */
+	background-color: rgba(0, 0, 0, 0.4);
+	min-height: 60vh;
+	min-width: 35vw;
+	padding: 15px;
+	/* border:1px solid rgba(255, 255, 255, 0.8); */
+	border-radius: 10px;
+	box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.2);
+}
+
+.result {
+	display: flex;
+	font-size: 2em;
+	font-weight: 100;
+	letter-spacing: 1px;
+	height: 50px;
+	width: 100%;
+	position: relative;
+}
+
+#password {
+	background-color: #13132f;
+	/* min-width: 100%; */
+	width: max-content;
+	border: none;
+	flex-grow: 2;
+	word-wrap: break-word;
+	padding-right: 52px;
+	padding-left: 10px;
+}
+
+#copy {
+	/* width: 30px;
+	height: 30px; */
+	background-color: #333488;
+	padding: 5px;
+	position: absolute;
+	right: 5px;
+	height: 40px;
+	width: 40px;
+	align-self: center;
+}
+
+.option {
+	width: 100%;
+	display: flex;
+	padding: 10px 5px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#length {
+	-webkit-appearance: none;
+	flex-grow: 2;
+	margin: 0 10px;
+	height: 15px;
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.8);
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
+
+#length:hover {
+	opacity: 1;
+}
+
+#length::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	background: #4c4ef0;
+	cursor: pointer;
+}
+
+#length::-moz-range-thumb {
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	background: #4c4ef0;
+	cursor: pointer;
+}
+
+#generate {
+	background-color: #333488;
+	font-size: 1.5em;
+	padding: 5px;
+	/* position: absolute; */
+	right: 5px;
+	width: 100%;
+	align-self: center;
+}
+
+#tooltip {
+	position: absolute;
+	align-self: center;
+	justify-self: center;
+	width: max-content;
+	font-size: 1.2em;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.4);
+	left: 70px;
+	top: 0;
+	border:2px solid rgba(255, 255, 255, 0.8);
+	border-radius: 5px;
+	visibility: hidden;
+}
